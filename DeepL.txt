@@ -1,0 +1,41 @@
+1976e71f-a20f-43c6-93f3-80845daf975b:fx
+
+
+
+supported languages
+....................
+
+Chinese (simplified)
+Danish
+Dutch
+English
+French
+German
+Italian
+Japanese
+Korean
+Norwegian
+Polish
+Portuguese
+Russian
+Spanish
+Swedish
+
+
+..................
+
+1. Chinese (Simplified): zh-CN
+2. Danish: da
+3. Dutch: nl
+4. English: en
+5. French: fr
+6. German: de
+7. Italian: it
+8. Japanese: ja
+9. Korean: ko
+10. Norwegian: no
+11. Polish: pl
+12. Portuguese: pt
+13. Russian: ru
+14. Spanish: es
+15. Swedish: sv
