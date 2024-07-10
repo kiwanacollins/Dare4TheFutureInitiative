@@ -104,7 +104,7 @@ function setCookie(name, value, days) {
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
-    console.log(`Set cookie: ${name}=${value}`);
+    // console.log(`Set cookie: ${name}=${value}`);
 }
 
 function getCookie(name) {
@@ -115,11 +115,11 @@ function getCookie(name) {
         while (c.charAt(0) == ' ') c = c.substring(1, c.length);
         if (c.indexOf(nameEQ) == 0) {
             const value = c.substring(nameEQ.length, c.length);
-            console.log(`Got cookie: ${name}=${value}`);
+            // console.log(`Got cookie: ${name}=${value}`);
             return value;
         }
     }
-    console.log(`Cookie ${name} not found`);
+    // console.log(`Cookie ${name} not found`);
     return null;
 }
 
@@ -147,7 +147,6 @@ function translatePage(targetLang) {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(`Translated text: ${data.text}`);
                     element.textContent = data.text;
                 })
                 .catch(error => console.error('Error:', error));
