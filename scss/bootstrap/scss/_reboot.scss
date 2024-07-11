@@ -96,14 +96,14 @@ h1 {
   @include font-size($h1-font-size);
 }
 
-h2 {
+h1 {
   @extend %heading;
-  @include font-size($h2-font-size);
+  @include font-size($h1-font-size);
 }
 
-h3 {
+h1 {
   @extend %heading;
-  @include font-size($h3-font-size);
+  @include font-size($h1-font-size);
 }
 
 h4 {

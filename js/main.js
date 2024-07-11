@@ -111,19 +111,19 @@ function getCookie(name) {
 }
 
 function translatePage(targetLang) {
-    const elementsToTranslate = document.querySelectorAll('h1, h2, p, li, a');
+    const elementsToTranslate = document.querySelectorAll('h1, h1, p, li, a');
 
     elementsToTranslate.forEach(element => {
-        if (targetLang === 'en') {
-            // Revert to original text
-            if (element.hasAttribute('data-original-text')) {
-                element.textContent = element.getAttribute('data-original-text');
-            }
-        } else {
+        // if (targetLang === 'en') {
+        //     // Revert to original text
+        //     if (element.hasAttribute('data-original-text')) {
+        //         element.textContent = element.getAttribute('data-original-text');
+        //     }
+        // } else {
             // Store original text if not already done
-            if (!element.hasAttribute('data-original-text')) {
-                element.setAttribute('data-original-text', element.textContent);
-            }
+            // if (!element.hasAttribute('data-original-text')) {
+            //     element.setAttribute('data-original-text', element.textContent);
+            // }
 
             const text = element.textContent;
             fetch(`http://localhost:3000/translate?text=${encodeURIComponent(text)}&targetLang=${encodeURIComponent(targetLang)}`)
@@ -137,7 +137,7 @@ function translatePage(targetLang) {
                     element.textContent = data.text;
                 })
                 .catch(error => console.error('Error:', error));
-        }
+        // }
     });
 }
 

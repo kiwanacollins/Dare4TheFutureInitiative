@@ -13,7 +13,7 @@
     bottom: 130px;
     z-index: 99;
     opacity: 0.8;
-    
+
 }
 
 
@@ -171,7 +171,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -328,6 +328,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -335,6 +336,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -363,7 +365,7 @@
 
 .testimonial-carousel .owl-item.center .testimonial-item img {
     background: var(--primary) !important;
-} 
+}
 
 .testimonial-carousel .owl-nav {
     position: absolute;
@@ -404,7 +406,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -415,7 +417,7 @@
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     margin-right: 10px;
 }
 
@@ -426,8 +428,8 @@
 }
 
 .footer .btn.btn-square {
-    color: rgba(255,255,255,0.5);
-    border: 1px solid rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .footer .btn.btn-square:hover {
@@ -524,10 +526,10 @@
 }
 
 .buttons {
-  position: absolute;
-  bottom: 15px;
-  display: flex;
-  gap: 20px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 .buttons span {
@@ -555,7 +557,7 @@
 }
 
 
-.buttons span:nth-child(2)::before{
+.buttons span:nth-child(2)::before {
     transform: rotate(135deg) translate(2px, 2px);
 }
 
@@ -572,14 +574,16 @@
     transform: translateY(40px);
     z-index: 10000;
     opacity: 0;
-    
+
 }
 
-.content h2 {
+.content h1 {
     font-size: 3em;
     color: #fff;
     opacity: 0.9;
 }
+
+
 
 .content p {
     color: #fff;
@@ -598,10 +602,12 @@
     .containerr {
         height: 85%;
     }
+
     .slider {
         position: absolute;
         inset: 40px 40px 200px 40px;
     }
+
     .slider .slides {
         width: 100px;
         height: 100px;
@@ -609,11 +615,13 @@
         bottom: -170px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     }
+
     .slider .slides:nth-child(1),
     .slider .slides:nth-child(2) {
         top: initial;
         bottom: 0;
     }
+
     .slider .slides:nth-child(3) {
         left: 0;
     }
