@@ -594,6 +594,10 @@
 }
 
 @media (max-width: 900px) {
+
+    .containerr {
+        height: 85%;
+    }
     .slider {
         position: absolute;
         inset: 40px 40px 200px 40px;
