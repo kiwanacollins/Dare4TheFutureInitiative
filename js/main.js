@@ -82,6 +82,8 @@
 })(jQuery);
 
 
+
+
 // Translation start
 
 function setCookie(name, value, days) {
