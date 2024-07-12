@@ -455,6 +455,7 @@
 
 
 .containerr {
+    margin-top: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -639,6 +640,8 @@
     .slider .slides:nth-child(6) {
         left: 360px;
     }
+
+  
 
 }
 
