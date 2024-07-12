@@ -641,6 +641,15 @@
         left: 360px;
     }
 
+    .slider {
+        width: 100%;
+        position: absolute;
+        inset: 80px 200px 80px 80px;
+        background: #ccc;
+        border-radius: 20px;
+        margin-inline: auto;
+    }
+
   
 
 }
