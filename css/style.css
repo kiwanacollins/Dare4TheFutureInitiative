@@ -744,6 +744,11 @@
         top: 70px;
         right: 200px;
     }
+
+    #copy{
+
+        color: red;
+    }
 }
 
 /* End of the Image Expander */
