@@ -195,27 +195,35 @@
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img src="img/avatar-01.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.3s">
-                <img src="img/avatar-02.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.5s">
-                <img src="img/avatar-03.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.7s">
-                <img src="img/avatar-04.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.9s">
-                <img src="img/avatar-01.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="1.1s">
-                <img src="img/avatar-02.png" class="img-fluid" alt="">
+                <img src="img/me.jpg" class="img-fluid" alt="">
             </div>
         </div>
     </div>
 </div>
 <!-- Event Photo Grid End -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  </div>
 
 
 
@@ -298,6 +306,33 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    var images = document.querySelectorAll('.img-fluid');
+    images.forEach(img => {
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
 
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <!-- JavaScript Libraries -->
