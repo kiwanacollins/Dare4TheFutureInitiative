@@ -646,6 +646,10 @@
     width: 80%;
 }
 
+.fix-me {
+    width: 60% !important;
+}
+
   
 
 }
