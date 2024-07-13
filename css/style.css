@@ -706,12 +706,13 @@
   
   /* The Close Button */
   .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
+    position: fixed; /* Changed from absolute to fixed to ensure visibility */
+    top: 50px; /* Adjusted for better visibility */
+    right: 200px; /* Adjusted for better visibility */
+    color: #fff; /* High contrast color */
+    font-size: 40px; /* Increased size for easier tapping */
     font-weight: bold;
+    z-index: 20; /* Ensure it's above other elements */
     transition: 0.3s;
   }
   
@@ -720,6 +721,15 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    .close {
+      font-size: 30px; /* Slightly smaller size for very small devices */
+      top: 10px;
+      right: 10px;
+    }
   }
 
 /* End of the Image Expander */
