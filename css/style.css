@@ -706,13 +706,13 @@
   
   /* The Close Button */
   .close {
-    position: fixed; /* Changed from absolute to fixed to ensure visibility */
-    top: 50px; /* Adjusted for better visibility */
-    right: 200px; /* Adjusted for better visibility */
-    color: #fff; /* High contrast color */
-    font-size: 40px; /* Increased size for easier tapping */
+    position: fixed; 
+    top: 50px; 
+    right: 200px; 
+    color: #fff; 
+    font-size: 40px; 
     font-weight: bold;
-    z-index: 20; /* Ensure it's above other elements */
+    z-index: 20;
     transition: 0.3s;
   }
   
