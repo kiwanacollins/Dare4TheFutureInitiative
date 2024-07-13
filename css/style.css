@@ -726,9 +726,9 @@
 
   @media (max-width: 768px) {
     .close {
-      font-size: 30px; /* Slightly smaller size for very small devices */
-      top: 10px;
-      right: 10px;
+      font-size: 30px;
+      top: 50px; 
+    right: 200px; 
     }
   }
 
