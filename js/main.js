@@ -165,8 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-
-// Translation End
-
-
+// Redirect to the donate page
+$(document).ready(function() {
+    $('#donateButton').on('click', function() {
+        window.location.href = '/donate.html';
+    });
+});
