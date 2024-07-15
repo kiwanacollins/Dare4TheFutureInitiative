@@ -752,3 +752,29 @@
 }
 
 /* End of the Image Expander */
+
+/* heart beat Start */
+@keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.05);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+  
+  .heartbeat-link {
+    display: inline-block;
+    animation: heartbeat 2s infinite;
+  }
+
+/* heart beat End */
